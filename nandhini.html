@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nandhini M | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+/* ---------- BASE ---------- */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Roboto',sans-serif;
+  background:#fdf6f0;
+  color:#3e2f2f;
+  line-height:1.6;
+  scroll-behavior:smooth;
+  transition:0.3s;
+}
+h2{font-family:'Montserrat',sans-serif;text-align:center;margin-bottom:30px;color:#5d4037;}
+a{text-decoration:none;color:inherit}
+
+/* ---------- NAVBAR ---------- */
+nav{
+  position:sticky;
+  top:0;
+  background:#8d6e63;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  z-index:100;
+}
+nav a{color:white;margin:0 15px;font-weight:500;transition:0.3s;}
+nav a:hover{color:#ffccbc}
+
+/* ---------- HEADER ---------- */
+header{
+  background:linear-gradient(135deg,#8d6e63,#a1887f);
+  color:white;
+  text-align:center;
+  padding:120px 20px 80px;
+}
+header h1{font-size:3em;font-family:'Montserrat';}
+header p{font-size:1.2em;margin-top:10px}
+
+.typewriter{
+  display:inline-block;
+  overflow:hidden;
+  border-right:3px solid rgba(255,255,255,0.75);
+  white-space:nowrap;
+  animation:typing 4s steps(40,end),blink 0.75s step-end infinite;
+}
+@keyframes typing{from{width:0}to{width:100%}}
+@keyframes blink{50%{border-color:transparent;}}
+
+/* ---------- SECTION ---------- */
+section{padding:80px 20px}
+
+/* ---------- CARD ---------- */
+.card,.experience-card,.contact-card{
+  background:#fff3e0;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.1);
+  max-width:900px;
+  margin:30px auto;
+  transition:0.4s;
+}
+.card:hover,.experience-card:hover,.contact-card:hover{
+  transform:translateY(-10px);
+}
+
+/* ---------- FOOTER ---------- */
+footer{
+  background:#6d4c41;
+  color:white;
+  text-align:center;
+  padding:25px;
+}
+
+body.dark{background:#3e2f2f;color:#fdf6f0;}
+body.dark nav{background:#5d4037}
+body.dark .card,body.dark .experience-card,body.dark .contact-card{background:#6d4c41;color:white}
+
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div><strong>NANDHINI M</strong></div>
+  <div>
+    <a href="#objective">Objective</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#internship">Internship</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+    <a href="#" id="darkToggle">🌙</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header>
+  <h1>NANDHINI M</h1>
+  <p class="typewriter">
+    Aspiring Java & Spring Boot Developer | Web Developer | ML Enthusiast
+  </p>
+</header>
+
+<!-- CAREER OBJECTIVE -->
+<section id="objective">
+  <h2>Career Objective</h2>
+  <div class="card">
+    <p>
+      Aspiring Computer Science graduate seeking a challenging position in Java and Spring Boot development,
+      leveraging strong skills in web technologies and machine learning to contribute effectively
+      to organizational growth and innovation.
+    </p>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="card">
+    <h3>Panimalar Engineering College, Chennai</h3>
+    <p>B.E Computer Science and Engineering (2023 – 2027)</p>
+    <p>GPA: 8.8</p>
+  </div>
+
+  <div class="card">
+    <h3>Govt. Model Hr Sec School, Krishnagiri</h3>
+    <p>Higher Secondary Certificate (2022 – 2023)</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills Summary</h2>
+  <div class="card">
+    <p><strong>Languages:</strong> Java, SQL, Python</p>
+    <p><strong>Web Technologies:</strong> HTML, CSS, JavaScript</p>
+    <p><strong>Tools:</strong> Postman, Excel, MySQL, Google Colab</p>
+    <p><strong>Machine Learning:</strong> NumPy, Pandas, Matplotlib, Scikit-learn</p>
+    <p><strong>Core Competencies:</strong> Java Programming, Spring Boot</p>
+    <p><strong>Soft Skills:</strong> Communication, Leadership, Teamwork</p>
+  </div>
+</section>
+
+<!-- INTERNSHIP -->
+<section id="internship">
+  <h2>Internship</h2>
+
+  <div class="experience-card">
+    <h3>Web Development Intern – PRO 17 Analytics</h3>
+    <p>Dec 2023 – Jan 2024</p>
+    <ul>
+      <li>Developed web applications using HTML, CSS, JavaScript.</li>
+      <li>Designed responsive UI.</li>
+      <li>Collaborated on frontend-backend integration.</li>
+    </ul>
+  </div>
+
+  <div class="experience-card">
+    <h3>Intern -Kalaimakal Systems Limited</h3>
+    <p>Jun 2025 -Jul 2025</p>
+    <ul>
+      <li>Learned Python and data analysis.</li>
+      <li>Worked with NumPy, Pandas, and Matplotlib.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Smart Crop Recommendation System</h3>
+    <p>ML-based crop recommendation using Random Forest (99.9% accuracy), deployed using Streamlit.</p>
+    <a href="https://github.com/Nandhini2927/Smart-Crop-Recommendation" target="_blank">View Project</a>
+  </div>
+
+  <div class="card">
+    <h3>Student Performance Prediction</h3>
+    <p>Predicted academic performance using machine learning techniques.</p>
+    <a href="https://github.com/Nandhini2927/Student-Performance-Prediction" target="_blank">View Project</a>
+  </div>
+
+  <div class="card">
+    <h3>Weather Forecast Application</h3>
+    <p>Real-time weather web app using HTML, CSS, JavaScript & Weather API.</p>
+    <a href="https://github.com/Nandhini2927/Weather-App" target="_blank">View Project</a>
+  </div>
+
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <h2>Certificates</h2>
+  <div class="card">
+    <ul>
+      <li>Python Programming -Infosys Springboard</li>
+      <li>Java Programming - Infosys Springboard</li>
+      <li>Introduction to Data Analytics - Simplilearn</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact-card">
+    <p>Email: <a href="mailto:nandhunandhini2927@gmail.com">nandhunandhini2927@gmail.com</a></p>
+    <p>Phone: +91-7812882927</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/nandhini-m-3831ab2a0" target="_blank">View Profile</a></p>
+    <p>GitHub: <a href="https://github.com/Nandhini2927" target="_blank">Nandhini2927</a></p>
+    
+  </div>
+</section>
+
+<footer>
+  © 2026 Nandhini M
+</footer>
+
+<script>
+const darkToggle = document.getElementById("darkToggle");
+darkToggle.addEventListener("click",(e)=>{
+  e.preventDefault();
+  document.body.classList.toggle("dark");
+});
+</script>
+
+</body>
+</html>
